@@ -137,7 +137,7 @@ func (api *Client) SetSnooze(minutes int) (*DNDStatus, error) {
 	return api.SetSnoozeContext(context.Background(), minutes)
 }
 
-// SetSnooze adjusts the snooze duration for a user's Do Not Disturb settings with a custom context.
+// SetSnoozeContext adjusts the snooze duration for a user's Do Not Disturb settings with a custom context.
 // For more information see the SetSnooze docs
 func (api *Client) SetSnoozeContext(ctx context.Context, minutes int) (*DNDStatus, error) {
 	values := url.Values{

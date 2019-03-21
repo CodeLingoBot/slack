@@ -22,7 +22,7 @@ type backoff struct {
 	Min, Max time.Duration
 }
 
-// Returns the current value of the counter and then multiplies it
+// Duration returns the current value of the counter and then multiplies it
 // Factor
 func (b *backoff) Duration() time.Duration {
 	//Zero-values are nonsensical, so we use
